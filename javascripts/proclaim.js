@@ -23,8 +23,10 @@ $(window).load(function(){
       },
       setupListeners: function() {
       	var self = this;
-		    this.modal.click(function(e) { e.stopPropagation(); });
-		    this.modal_bg.click(function(e) { self.conceal(); });
+		    this.modal_bg.click(function(e) { 
+          if(e.target != this){ return true; } // Prevents children from firing event without using stopPropagation.
+          self.conceal(); 
+        });
 		    // Listens for end of CSS animations.
 		    this.modal.on("webkitAnimationEnd oAnimationEnd oanimationend animationend msTransitionEnd", function() {
 		        self.toggleModalClasses();
