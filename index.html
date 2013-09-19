@@ -1,85 +1,85 @@
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Proclaim modal demo</title>
-  
-  <link href="stylesheets/proclaim.css" media="all" rel="stylesheet" type="text/css">
-
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/proclaim.js"></script>
-  
-  <style type="text/css">
-
-  	body {
-  		margin: 25px;
-  		font-family: 'Helvetica Neue', 'Helvetica', arial, sans-serif;
-  	}
-
-		/* ---------------------------------------- */
-		/* --------- Custom styles for modal ------ */
-		/* ---------------------------------------- */
-
-		.proclaim-modal {
-			padding: 15px;
-		}
-		.proclaim-modal h1{
-			margin: 0;
-			font-style: italic;
-		}
-
-		.modal-closer {
-			position: absolute;
-			right: 1em;
-		}
-
-		/* Dont want the modal to take up the whole height of the page? Just set its height. */
-		#modal-two {
-			height: auto;
-		}
-
-	</style>
-
-	<script type="text/javascript">
-		$(window).load(function(){
-
-			$('#modal-one-opener').click(function(e) {
-		    e.preventDefault();
-		    $('#modal-one').proclaim();
-			});
-
-			$('#modal-two-opener').click(function(e) {
-		    e.preventDefault();
-		    $('#modal-two').proclaim();
-			});
-
-			$('.modal-closer').click(function(e) {
-				e.preventDefault();
-				$(this).parent('.proclaim-modal').conceal();
-			});
-
-		});
-	</script>
-</head>
-<body>
-
-  <a id="modal-one-opener" href="#">Open First Modal</a>
-  <br/>
-  <a id="modal-two-opener" href="#">Open Second Modal</a>
-
-	<div id="modal-one" class="proclaim-modal">
-		<a class='modal-closer' href="#">x</a>
-		<h1> First Modal </h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero risus, consequat at fringilla ut, laoreet nec mi. Duis ornare dolor massa, vel mattis dui ultricies ut. Phasellus tempus viverra turpis, sit amet sodales tellus ultrices sit amet. Cras porta ipsum nec felis porta suscipit. Nulla facilisi. Curabitur adipiscing rhoncus tempus. Aenean eu tortor blandit, sollicitudin risus eu, condimentum purus. Etiam ac libero ornare, ornare sem auctor, tempor felis. Quisque id lacus et velit faucibus pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan ultrices ligula sit amet dictum. Suspendisse magna purus, laoreet ut tellus quis, interdum malesuada ligula. Etiam sed elementum velit. Phasellus mauris tortor, interdum vitae pulvinar vitae, fringilla cursus neque. In luctus ipsum ac interdum sollicitudin. Aliquam adipiscing, justo eu consectetur eleifend, nulla diam condimentum justo, vitae consequat dui nisl a ipsum.
-		</p>
-	</div>
-
-	<div id="modal-two" class="proclaim-modal">
-		<a class='modal-closer' href="#">x</a>
-		<h1> Second Modal </h1>
-	  <p>
-	  	Praesent gravida condimentum mauris sit amet placerat. Vivamus dui massa, mollis id dolor eu, viverra placerat tellus. Nam sagittis facilisis sagittis. Praesent tempor sem justo, sed vehicula erat ultricies id. Duis quis imperdiet tortor. Sed quam eros, ullamcorper ut vestibulum eget, iaculis nec magna. Cras auctor auctor egestas. Nulla rhoncus molestie lectus, ac adipiscing augue aliquet at. Etiam ultricies vel elit et aliquet. Sed mauris quam, lobortis non sapien blandit, blandit cursus velit. Mauris mattis tortor ac nisl aliquam suscipit.
-	  </p>
-	</div>
-</body>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>Proclaim modal demo</title>
+        
+        <link href="stylesheets/proclaim.css" media="all" rel="stylesheet" type="text/css"/>
+        
+        <script src="javascripts/jquery.js"></script>
+        <script src="javascripts/proclaim.js"></script>
+        
+        <style type="text/css">
+            
+            body {
+            margin: 25px;
+            font-family: 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+            }
+            
+            /* ---------------------------------------- */
+            /* --------- Custom styles for modal ------ */
+            /* ---------------------------------------- */
+            
+            .proclaim-modal {
+            padding: 15px;
+            }
+            .proclaim-modal h1{
+            margin: 0;
+            font-style: italic;
+            }
+            
+            .modal-closer {
+            position: absolute;
+            right: 1em;
+            }
+            
+            /* Dont want the modal to take up the whole height of the page? Just set its height. */
+            #modal-two {
+            height: auto;
+            }
+            
+        </style>
+        
+        <script type="text/javascript">
+            $(window).load(function(){
+            
+            $('#modal-one-opener').click(function(e) {
+            e.preventDefault();
+            $('#modal-one').proclaim();
+            });
+            
+            $('#modal-two-opener').click(function(e) {
+            e.preventDefault();
+            $('#modal-two').proclaim();
+            });
+            
+            $('.modal-closer').click(function(e) {
+            e.preventDefault();
+            $(this).parent('.proclaim-modal').conceal();
+            });
+            
+            });
+        </script>
+    </head>
+    <body>
+        
+        <a id="modal-one-opener" href="#">Open First Modal</a>
+        <br/>
+        <a id="modal-two-opener" href="#">Open Second Modal</a>
+        
+        <div id="modal-one" class="proclaim-modal">
+            <a class='modal-closer' href="#">x</a>
+            <h1> First Modal </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero risus, consequat at fringilla ut, laoreet nec mi. Duis ornare dolor massa, vel mattis dui ultricies ut. Phasellus tempus viverra turpis, sit amet sodales tellus ultrices sit amet. Cras porta ipsum nec felis porta suscipit. Nulla facilisi. Curabitur adipiscing rhoncus tempus. Aenean eu tortor blandit, sollicitudin risus eu, condimentum purus. Etiam ac libero ornare, ornare sem auctor, tempor felis. Quisque id lacus et velit faucibus pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan ultrices ligula sit amet dictum. Suspendisse magna purus, laoreet ut tellus quis, interdum malesuada ligula. Etiam sed elementum velit. Phasellus mauris tortor, interdum vitae pulvinar vitae, fringilla cursus neque. In luctus ipsum ac interdum sollicitudin. Aliquam adipiscing, justo eu consectetur eleifend, nulla diam condimentum justo, vitae consequat dui nisl a ipsum.
+            </p>
+        </div>
+        
+        <div id="modal-two" class="proclaim-modal">
+            <a class='modal-closer' href="#">x</a>
+            <h1> Second Modal </h1>
+            <p>
+                Praesent gravida condimentum mauris sit amet placerat. Vivamus dui massa, mollis id dolor eu, viverra placerat tellus. Nam sagittis facilisis sagittis. Praesent tempor sem justo, sed vehicula erat ultricies id. Duis quis imperdiet tortor. Sed quam eros, ullamcorper ut vestibulum eget, iaculis nec magna. Cras auctor auctor egestas. Nulla rhoncus molestie lectus, ac adipiscing augue aliquet at. Etiam ultricies vel elit et aliquet. Sed mauris quam, lobortis non sapien blandit, blandit cursus velit. Mauris mattis tortor ac nisl aliquam suscipit.
+            </p>
+        </div>
+    </body>
 </html>
